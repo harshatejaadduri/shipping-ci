@@ -5,7 +5,7 @@ def configMap = [
     project: "roboshop"
 ]
 
-if( ! env.BRANCH_NAME.configMap('main') ) {
+if( ! env.BRANCH_NAME.equalsIgnoreCase('main') ) {
     mavenEKSPipeline(configMap)
 }
 else{
