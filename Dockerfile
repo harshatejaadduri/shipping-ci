@@ -1,4 +1,3 @@
-
 FROM maven AS builder
 WORKDIR /opt/server
 COPY pom.xml .

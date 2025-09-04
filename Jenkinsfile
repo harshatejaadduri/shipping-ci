@@ -1,4 +1,4 @@
-@Library(Map configMap('jenkins-shared-libraries'))
+@Library('jenkins-shared-libraries')
 
 def configMap = [
     component: "shipping",
